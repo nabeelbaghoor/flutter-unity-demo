@@ -17,18 +17,6 @@ class _MenuScreenState extends State<MenuScreen> {
       title: 'Simple Unity Demo',
       enableAR: false,
     ),
-    // new _MenuListItem(
-    //   description: 'No interaction of unity flutter library',
-    //   route: '/none',
-    //   title: 'No Interaction Unity Demo',
-    //   enableAR: false,
-    // ),
-    // new _MenuListItem(
-    //   description: 'Unity load and unload unity demo',
-    //   route: '/loader',
-    //   title: 'Safe mode Demo',
-    //   enableAR: false,
-    // ),
     new _MenuListItem(
       description:
           'This example shows various native API exposed by the library',
@@ -36,12 +24,6 @@ class _MenuScreenState extends State<MenuScreen> {
       title: 'Native exposed API demo',
       enableAR: false,
     ),
-    new _MenuListItem(
-      title: 'Test Orientation',
-      route: '/orientation',
-      description: 'test orientation change',
-      enableAR: false,
-    )
   ];
 
   @override
