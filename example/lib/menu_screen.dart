@@ -17,18 +17,18 @@ class _MenuScreenState extends State<MenuScreen> {
       title: 'Simple Unity Demo',
       enableAR: false,
     ),
-    new _MenuListItem(
-      description: 'No interaction of unity flutter library',
-      route: '/none',
-      title: 'No Interaction Unity Demo',
-      enableAR: false,
-    ),
-    new _MenuListItem(
-      description: 'Unity load and unload unity demo',
-      route: '/loader',
-      title: 'Safe mode Demo',
-      enableAR: false,
-    ),
+    // new _MenuListItem(
+    //   description: 'No interaction of unity flutter library',
+    //   route: '/none',
+    //   title: 'No Interaction Unity Demo',
+    //   enableAR: false,
+    // ),
+    // new _MenuListItem(
+    //   description: 'Unity load and unload unity demo',
+    //   route: '/loader',
+    //   title: 'Safe mode Demo',
+    //   enableAR: false,
+    // ),
     new _MenuListItem(
       description:
           'This example shows various native API exposed by the library',
@@ -41,13 +41,7 @@ class _MenuScreenState extends State<MenuScreen> {
       route: '/orientation',
       description: 'test orientation change',
       enableAR: false,
-    ),
-    new _MenuListItem(
-      description: 'Unity native activity demo',
-      route: '/activity',
-      title: 'Native Activity Demo ',
-      enableAR: true,
-    ),
+    )
   ];
 
   @override
@@ -55,21 +49,6 @@ class _MenuScreenState extends State<MenuScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Menu List'),
-        actions: [
-          Row(
-            children: [
-              Text("Enable AR"),
-              Checkbox(
-                value: enableAR,
-                onChanged: (changed) {
-                  setState(() {
-                    enableAR = changed;
-                  });
-                },
-              ),
-            ],
-          ),
-        ],
       ),
       body: Center(
         child: ListView.builder(
